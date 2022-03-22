@@ -18,23 +18,23 @@ body{
     height: 100%;
 }
 
-.navBar {
+.navbar {
     display: flex;
 }
 
-.navLogo {
+.nav-logo {
     color: white;
     width: 50%;
 }
 
-.navWords {
+.nav-words {
     color: var(--mainText);
     display: flex;
     justify-content: space-around;
     width: 50%;
 }
 
-#borderBox {
+.border-box {
     width: 90%;
     height: 80%;
     display: flex;
@@ -44,13 +44,13 @@ body{
     margin: auto;
 }
 
-.whiteBorder {
+.white-border {
     background-color: #0a0a0a;
     width: 98%;
     height: 96%;
 }
 
-#introParagraph {
+#intro-paragraph {
     position: absolute;
     left: 15%;
     top: 20%;
@@ -66,7 +66,7 @@ body{
     color: var(--secondaryText)
 }
 
-#name3D {
+#name-3d {
     position: absolute;
     left: 14.8%;
     top: 47.5%;
@@ -74,10 +74,59 @@ body{
     font-weight: 700;
 }
 
-#interestsParagraph {
+#interests-paragraph {
     color: white;
     font-size: 20px;
     width: 80%;
     font-weight: 100;
     margin-top: 3%;
 }
+
+.border-box-about {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+}
+
+.white-border-about {
+    background-color: #0a0a0a;
+    width: 98%;
+    height: 96%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.about-me-section {
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    justify-content: center;
+}
+
+#about-me-title-backdrop {
+    color: var(--secondaryText);
+    font-size: 72px;
+    font-weight: 700;
+    position: absolute;
+    left: 12em;
+}
+
+#about-me-title {
+    color: white;
+    font-size: 72px;
+    font-weight: 700;
+    position: absolute;
+    left: 11.93em;
+    top: 9.93em;
+}
+
+
+#about-me-content {
+    color: white;
+    left: 0;
+}
+
