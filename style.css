@@ -305,39 +305,7 @@ body{
     align-items: center;
 }
 
-#ark,
-#banana-finder,
-#weather-dashboard,
-#work-day-scheduler,
-#note-taker,
-#code-quiz {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#ark img,
-#banana-finder img,
-#weather-dashboard img,
-#work-day-scheduler img,
-#note-taker img,
-#code-quiz img {
-    width: 80%;
-    height: 90%;
-    border-radius: 10px;
-}
-
-#ark img:hover,
-#banana-finder img:hover,
-#weather-dashboard img:hover,
-#work-day-scheduler img:hover,
-#note-taker img:hover,
-#code-quiz img:hover {
-    cursor: pointer;
-}
-
-figure.effect-zoe figcaption {
+figure.effect figcaption {
     top: auto;
     bottom: 0;
     padding: 1em;
@@ -347,12 +315,12 @@ figure.effect-zoe figcaption {
     transition: transform 0.35s;
     -webkit-transform: translate3d(0,100%,0);
     transform: translate3d(0,100%,0);
-  }
+}
     
-figure.effect-zoe p.description {
+figure.effect div.description {
     position: absolute;
-    bottom: 10em;
-    left: 4em;
+    bottom: 5em;
+    left: 2.5em;
     padding: 2em;
     color: #fff;
     text-transform: none;
@@ -364,26 +332,58 @@ figure.effect-zoe p.description {
     text-align: center;
   }
   
-figure.effect-zoe:hover p.description {
+figure.effect:hover div.description {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    width: 450px;
+    height: 150px;
   }
   
-figure.effect-zoe:hover figcaption {
+figure.effect:hover figcaption {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
   
-#test-pic img {
-    width: 100%;
-    height: 100%;
+#screenshot img {
+    width: 570px;
+    height: 270px;
     border-radius: 10px;
 }
 
-#test-pic {
+#screenshot {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
+
+.description-buttons {
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.description-buttons:hover {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    transition: .2s;
+}
+
+
+.description a {
+    text-decoration: none;
+}
+
