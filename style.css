@@ -1,6 +1,6 @@
 :root {
     --mainBackground: #0a0a0a;
-    --mainText: rgb(255, 246, 226);
+    --mainText: rgb(255, 251, 241);
     --secondaryText: #246FB5;
 }
 
@@ -104,6 +104,17 @@ body{
     justify-content: center;
 }
 
+#self-portrait {
+    width: 300px;
+    transition: .2s;
+}
+
+#self-portrait:hover {
+    width: 340px;
+    transition: .2s;
+}
+
+
 #intro-paragraph {
     position: absolute;
     left: 15%;
@@ -157,7 +168,14 @@ body{
 
 #photo-about {
     width: 400px;
+    transition: .2s;
 }
+
+#photo-about:hover {
+    width: 450px;
+    transition: .2s;
+}
+
 
 .white-border-about #avatar-half {
     display: flex;
@@ -194,11 +212,13 @@ body{
     margin-top: 10px;
     border-radius: 30px;
     font-weight: 700;
+    transition: .5s;
+
 }
 
 #resume:hover {
     cursor: pointer;
-    background-color: var(--mainBackground);
+    background-color: rgb(36, 36, 36);
     color: var(--mainText);
     border: var(--mainText) solid 1px;
     transition: .2s;
@@ -268,6 +288,7 @@ body{
     padding: 20px;
     background-color: #a53a1f;
     cursor: pointer;
+    transition: .3s;
 }
 
 #html-logo img:hover {
@@ -284,6 +305,7 @@ body{
     padding: 20px;
     background-color: #2a7abb;
     cursor: pointer;
+    transition: .3s;
 }
 
 #css-logo img:hover {
@@ -300,6 +322,7 @@ body{
     padding: 20px;
     background-color: #d1b900;
     cursor: pointer;
+    transition: .3s;
 }
 
 #javascript-logo img:hover {
@@ -316,6 +339,7 @@ body{
     padding: 20px;
     background-color: #52831d;
     cursor: pointer;
+    transition: .3s;
 }
 
 #nodejs-logo img:hover {
@@ -332,6 +356,7 @@ body{
     padding: 20px;
     background-color: #1b4555;
     cursor: pointer;
+    transition: .3s;
 }
 
 #mysql-logo img:hover {
@@ -348,6 +373,7 @@ body{
     padding: 20px;
     background-color: #824a13;
     cursor: pointer;
+    transition: .3s;
 }
 
 #handlebars-logo img:hover {
@@ -463,6 +489,7 @@ figcaption .description p {
     font-weight: 700;
     font-size: 14px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .description-buttons:hover {
@@ -522,6 +549,7 @@ figcaption .description p {
     justify-content: center;
     border-radius: 40px;
     cursor: pointer;
+    transition: .3s;
 }
 
 .links-section .social-buttons:hover {
