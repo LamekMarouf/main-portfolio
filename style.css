@@ -28,7 +28,7 @@ body{
     display: flex;
     padding: 0 50px;
     position: fixed;
-    width: 1410px;
+    width: 95%;
     background-color: #0a0a0a;
     top: 0;
     z-index: 10;
@@ -117,15 +117,8 @@ body{
 }
 
 #name {
-    color: var(--secondaryText)
-}
-
-#name-3d {
-    position: absolute;
-    left: 14.8%;
-    top: 47.5%;
-    font-size: 72px;
-    font-weight: 700;
+    color: var(--secondaryText);
+    text-shadow: 4px 2px white;
 }
 
 #interests-paragraph {
@@ -162,14 +155,6 @@ body{
     justify-content: center;
 }
 
-#about-me-title-backdrop {
-    color: var(--secondaryText);
-    font-size: 72px;
-    font-weight: 700;
-    position: absolute;
-    left: 12em;
-}
-
 #photo-about {
     width: 400px;
 }
@@ -181,12 +166,13 @@ body{
 }
 
 #about-me-title {
-    color: white;
+    color: var(--secondaryText);
     font-size: 72px;
     font-weight: 700;
-    position: absolute;
-    left: 11.95em;
-    top: 9.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 4px 2px white;  
 }
 
 #about-me-content {
@@ -417,9 +403,9 @@ figure.effect figcaption {
 }
     
 figure.effect div.description {
-    position: absolute;
-    bottom: 5em;
-    left: 2.5em;
+    position: fixed;
+    bottom: 170%;
+    left: 7%;
     padding: 2em;
     color: #fff;
     text-transform: none;
