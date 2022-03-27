@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+html a {
+    text-decoration: none;
+}
+
 body{
     background-color: var(--mainBackground);
     height: 100%;
@@ -163,7 +167,7 @@ body{
     font-weight: 700;
     position: absolute;
     left: 11.95em;
-    top: 9.2em;
+    top: 9.5em;
 }
 
 #about-me-content {
@@ -181,6 +185,7 @@ body{
     justify-content: center;
     background-color: var(--mainText);
     width: 200px;
+    height: 50px;
     margin-top: 10px;
     border-radius: 30px;
     font-weight: 700;
@@ -193,7 +198,6 @@ body{
     border: var(--mainText) solid 1px;
     transition: .2s;
 }
-
 
 
 /* Skills Section */
@@ -447,5 +451,92 @@ figure.effect:hover figcaption {
 
 .description a {
     text-decoration: none;
+}
+
+/* Socials Section */
+.border-box-socials {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+}
+
+.white-border-socials {
+    background-color: #0a0a0a;
+    width: 98%;
+    height: 96%;
+    display: grid;
+    grid-template-rows: 1fr 3fr;
+}
+
+#socials-title {
+    color: var(--mainText);
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+.links-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--mainBackground);
+}
+
+.links-section p {
+    background-color: var(--mainText);
+    font-size: 36px;
+    width: 200px;
+    height: 80px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.links-section .social-buttons:hover {
+    background-color: rgb(36, 36, 36);
+    color: var(--mainText);
+    transition: .2s;
+    border: var(--mainText);
+}
+
+.links-section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links-section a {
+    text-decoration: none;
+    color: var(--mainBackground);
+}
+
+#github-logo {
+    height: 80px;
+    background-color: var(--mainText);
+    padding: 3px;
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+#linkedin-logo {
+    height: 80px;
+    background-color: var(--mainText);
+    border-radius: 100px;
+    margin-right: 15px;
+}
+
+#resume-logo {
+    height: 80px;
+    background-color: var(--mainText);
+    margin-right: 15px;
 }
 
