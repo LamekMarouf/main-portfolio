@@ -235,6 +235,14 @@ body{
     font-weight: 700;
 }
 
+#skills-information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 35px;
+    text-align: center;
+}
+
 #html-logo,
 #css-logo,
 #javascript-logo,
@@ -254,6 +262,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #a53a1f;
+    cursor: pointer;
 }
 
 #html-logo img:hover {
@@ -269,6 +278,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #2a7abb;
+    cursor: pointer;
 }
 
 #css-logo img:hover {
@@ -284,6 +294,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #d1b900;
+    cursor: pointer;
 }
 
 #javascript-logo img:hover {
@@ -299,6 +310,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #52831d;
+    cursor: pointer;
 }
 
 #nodejs-logo img:hover {
@@ -314,6 +326,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #1b4555;
+    cursor: pointer;
 }
 
 #mysql-logo img:hover {
@@ -329,6 +342,7 @@ body{
     border-radius: 60px;
     padding: 20px;
     background-color: #824a13;
+    cursor: pointer;
 }
 
 #handlebars-logo img:hover {
@@ -414,6 +428,10 @@ figure.effect:hover figcaption {
     -webkit-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
   }
+
+figcaption .description p {
+    margin-right: 20px;
+}
   
 #screenshot img {
     width: 570px;
