@@ -50,7 +50,7 @@
                     <div id="about-me-title">About Me</div>
                 </div>
                 <div id="about-me-content">
-                    <p>LHello World! I love and enjoy the process and creativity that comes with
+                    <p>Hello World! I love and enjoy the process and creativity that comes with
                         building websites and apps. I am a graduate of The University of Sydney and
                         Trilogy’s Full-Stack Coding Bootcamp. During this course, I have acquired all
                         necessary skills to build a full-stack website with languages such as HTML,
@@ -72,21 +72,42 @@
 
             <div class="skills">
                 <div id="skills-title"><p>MY SKILLS</p></div>
-                <div id="html-logo"><img src="./images/htmlLogo.png" alt="HTML Logo"></div>
-                <div id="css-logo" class="skill-hover"><img src="./images/cssLogo.png" alt="CSS Logo"></div>
-                <div id="javascript-logo" class="skill-hover"><img src="./images/javascriptLogo.png" alt="JavaScript Logo"></div>
+                <div id="react-logo"><img src="./images/reactLogo.png" alt="React Logo"></div>
+                <div id="mongodb-logo" class="skill-hover"><img src="./images/mongodbLogo.png" alt="MongoDB Logo"></div>
+                <div id="graphql-logo" class="skill-hover"><img src="./images/graphqlLogo.png" alt="GraphQl Logo"></div>
             </div>
             
             <div class="skills">
-                <div id="skills-information">
-                    <p>These are all the skills and languages I have learnt, processed and created projects using. 
-                        These include HTML, CSS, JavaScript, NodeJS, MySql and Handlebars. To know further about my understanding
-                        for each language, please take a look at my resume.
+                <div class="skills-information">
+                    <p>These are all the skills and languages I have learnt, processed and created projects using. These include:
+                        <div id="skills-list">
+                            <ul id="skills-list-left">
+                                <li>React</li>
+                                <li>MongoDB</li>
+                                <li>GraphQL</li>
+                                <li>Node.js</li>
+                                <li>MySql</li>
+                            </ul>
+                            <ul>
+                                <li>Handlebars</li>
+                                <li>Bootstrap</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                            </ul>
+                        </div>
                     </p>
                 </div>
                 <div id="nodejs-logo" class="skill-hover"><img src="./images/nodejsLogo.png" alt="NodeJs Logo"></div>
                 <div id="mysql-logo" class="skill-hover"><img src="./images/mysqlLogo.png" alt="MySql Logo"></div>
                 <div id="handlebars-logo" class="skill-hover"><img src="./images/handlebarsLogo.png" alt="Handlebars Logo"></div>
+                <p class="skills-information"6> To know further about my understanding
+                    for each language, please take a look at my resume and projects.
+                </p>
+                <div id="html-logo"><img src="./images/htmlLogo.png" alt="HTML Logo"></div>
+                <div id="css-logo" class="skill-hover"><img src="./images/cssLogo.png" alt="CSS Logo"></div>
+                <div id="javascript-logo" class="skill-hover"><img src="./images/javascriptLogo.png" alt="JavaScript Logo"></div>
+
             </div>
 
         </div>
@@ -244,14 +265,40 @@
                     <a href="https://www.linkedin.com/in/lamek-marouf-814b88224/" target="_blank"><p class="social-buttons">LINKEDIN</p></a>
                 </div>
 
+            </div>
+
+            <div class="links-section">
+
                 <div>
                     <img id="resume-logo" src="./images/resumeLogo.png" alt="Resume Logo">
                     <a href="./extras/codingResume.pdf"  target="_blank"><p class="social-buttons">RESUME</p></a>
                 </div>
 
+                <div>
+                    <img id="phone-logo" src="./images/phone-logo.png" alt="Resume Logo">
+                    <p class="social-buttons" data-modal-target="#contact-popup">CONTACT INFO</p></a>
+                </div>
+
+                <div class="contact-popup" id="contact-popup">
+                    <div class="contact-header">
+                        <div class="contact-title">Contact information</div>
+                        <button data-close-button class="close-button">&times;</button>
+                    </div>
+                    <div class="contact-body">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla alias id asperiores corporis 
+                        commodi ipsam nesciunt illo dicta ad, similique dolore nemo ea, eaque, odit consequatur! Rem in 
+                        perferendis dignissimos.
+                    </div>
+                </div>
+                <div id="overlay"></div>
+
+
             </div>
+
     </div>
 </section>
+
+<script src="./components/contact-modal.js"></script>
 
 </body>
 </html>

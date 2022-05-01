@@ -213,6 +213,7 @@ body{
     border-radius: 30px;
     font-weight: 700;
     transition: .5s;
+    border: var(--mainText) 2px solid;
 
 }
 
@@ -220,7 +221,7 @@ body{
     cursor: pointer;
     background-color: rgb(36, 36, 36);
     color: var(--mainText);
-    border: var(--mainText) solid 1px;
+    border: var(--mainText) solid 2px;
     transition: .2s;
 }
 
@@ -241,7 +242,7 @@ body{
     width: 98%;
     height: 96%;
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     color: var(--mainText);
 }
 
@@ -260,14 +261,26 @@ body{
     font-weight: 700;
 }
 
-#skills-information {
+.skills-information {
     display: flex;
     align-items: center;
     justify-content: center;
     padding-left: 35px;
-    text-align: center;
+    flex-direction: column;
 }
 
+#skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#skills-list-left {
+    padding: 0%;
+}
+
+#react-logo,
+#mongodb-logo,
+#graphql-logo,
 #html-logo,
 #css-logo,
 #javascript-logo,
@@ -279,60 +292,63 @@ body{
     justify-content: center;
 }
 
-/* HTML Logo - Skills */
-#html-logo img{
-    width: 50%;
+/* React Logo */
+#react-logo img{
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
     padding: 20px;
-    background-color: #a53a1f;
+    background-color: #1f41a5;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
-#html-logo img:hover {
+#react-logo img:hover {
     background-color: var(--mainText);
     transition: .3s;
 }
 
-/* CSS Logo - Skills */
-#css-logo img {
-    width: 50%;
+/* MongoDB Logo - Skills */
+#mongodb-logo img {
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
     padding: 20px;
-    background-color: #2a7abb;
+    background-color: #116f32;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
-#css-logo img:hover {
+#mongodb-logo img:hover {
     background-color: var(--mainText);
     transition: .3s;
 }
 
-/* JavaScript Logo - Skills */
-#javascript-logo img {
-    width: 50%;
+/* GraphQl Logo - Skills */
+#graphql-logo img {
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
     padding: 20px;
-    background-color: #d1b900;
+    background-color: #a51871;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
-#javascript-logo img:hover {
+#graphql-logo img:hover {
     background-color: var(--mainText);
     transition: .3s;
 }
 
 /* NodeJs Logo - Skills */
 #nodejs-logo img {
-    width: 50%;
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
@@ -340,6 +356,7 @@ body{
     background-color: #52831d;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
 #nodejs-logo img:hover {
@@ -349,7 +366,7 @@ body{
 
 /* MySql Logo - Skills */
 #mysql-logo img {
-    width: 50%;
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
@@ -357,6 +374,7 @@ body{
     background-color: #1b4555;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
 #mysql-logo img:hover {
@@ -366,7 +384,7 @@ body{
 
 /* Handlebars Logo - Skills */
 #handlebars-logo img {
-    width: 50%;
+    width: 40%;
     height: 50%;
     border: var(--mainText) solid 2px;
     border-radius: 60px;
@@ -374,9 +392,64 @@ body{
     background-color: #824a13;
     cursor: pointer;
     transition: .3s;
+    margin: 15px;
 }
 
 #handlebars-logo img:hover {
+    background-color: var(--mainText);
+    transition: .3s;
+}
+
+/* HTML Logo - Skills */
+#html-logo img{
+    width: 40%;
+    height: 50%;
+    border: var(--mainText) solid 2px;
+    border-radius: 60px;
+    padding: 20px;
+    background-color: #a53a1f;
+    cursor: pointer;
+    transition: .3s;
+    margin: 15px;
+}
+
+#html-logo img:hover {
+    background-color: var(--mainText);
+    transition: .3s;
+}
+
+/* CSS Logo - Skills */
+#css-logo img {
+    width: 40%;
+    height: 50%;
+    border: var(--mainText) solid 2px;
+    border-radius: 60px;
+    padding: 20px;
+    background-color: #2a7abb;
+    cursor: pointer;
+    transition: .3s;
+    margin: 15px;
+}
+
+#css-logo img:hover {
+    background-color: var(--mainText);
+    transition: .3s;
+}
+
+/* JavaScript Logo - Skills */
+#javascript-logo img {
+    width: 40%;
+    height: 50%;
+    border: var(--mainText) solid 2px;
+    border-radius: 60px;
+    padding: 20px;
+    background-color: #d1b900;
+    cursor: pointer;
+    transition: .3s;
+    margin: 15px;
+}
+
+#javascript-logo img:hover {
     background-color: var(--mainText);
     transition: .3s;
 }
@@ -490,12 +563,14 @@ figcaption .description p {
     font-size: 14px;
     cursor: pointer;
     transition: .3s;
+    border: var(--mainText) 2px solid;
 }
 
 .description-buttons:hover {
     background-color: rgb(36, 36, 36);
     color: var(--mainText);
     transition: .2s;
+    border: var(--mainText) 2px solid;
 }
 
 
@@ -519,7 +594,7 @@ figcaption .description p {
     width: 98%;
     height: 96%;
     display: grid;
-    grid-template-rows: 1fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
 }
 
 #socials-title {
@@ -541,7 +616,7 @@ figcaption .description p {
 .links-section p {
     background-color: var(--mainText);
     font-size: 36px;
-    width: 200px;
+    width: 320px;
     height: 80px;
     font-weight: 600;
     display: flex;
@@ -550,13 +625,14 @@ figcaption .description p {
     border-radius: 40px;
     cursor: pointer;
     transition: .3s;
+    border: var(--mainText) 2px solid;
 }
 
 .links-section .social-buttons:hover {
     background-color: rgb(36, 36, 36);
     color: var(--mainText);
     transition: .2s;
-    border: var(--mainText);
+    border: var(--mainText) 2px solid;
 }
 
 .links-section div {
@@ -591,3 +667,72 @@ figcaption .description p {
     margin-right: 15px;
 }
 
+#phone-logo {
+    height: 80px;
+    background-color: var(--mainText);
+    margin-right: 15px;
+    border-radius: 100px;
+}
+
+.contact-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s ease-in-out;
+    border: var(--mainText) 2px solid;
+    border-radius: 10px;
+    z-index: 30;
+    background-color: var(--mainText);
+    width: 800px;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-popup.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.contact-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: var(--mainText) 2px solid;
+}
+
+.contact-header .contact-title {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.contact-body {
+    padding: 20px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    transition: .2s ease-in-out;
+}
+
+#overlay.active {
+    pointer-events: all;
+    opacity: 1;
+}
