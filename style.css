@@ -683,11 +683,12 @@ figcaption .description p {
     border: var(--mainText) 2px solid;
     border-radius: 10px;
     z-index: 30;
-    background-color: var(--mainText);
-    width: 800px;
+    background-color: var(--mainBackground);
+    width: 600px;
     max-width: 80%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contact-popup.active {
@@ -695,16 +696,17 @@ figcaption .description p {
 }
 
 .contact-header {
-    padding: 20px;
+    padding: 0px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: var(--mainText) 2px solid;
+    border-bottom: var(--mainBackground) 2px solid;
 }
 
 .contact-header .contact-title {
     font-size: 36px;
     font-weight: 600;
+    color: var(--mainText);
 }
 
 .contact-header .close-button {
@@ -714,11 +716,30 @@ figcaption .description p {
     background: none;
     font-size: 36px;
     font-weight: 600;
+    color: var(--mainText);
 }
 
 .contact-body {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    color: var(--mainText);
 }
+
+.contact-body ul {
+    list-style: none;
+}
+
+.contact-body ul li,
+.contact-body ul li a{
+    background-color: var(--secondaryText);
+    margin: 3px;
+    padding: 5px;
+    color: var(--mainText);
+    border-radius: 5px;
+}
+
+
 
 #overlay {
     position: fixed;
